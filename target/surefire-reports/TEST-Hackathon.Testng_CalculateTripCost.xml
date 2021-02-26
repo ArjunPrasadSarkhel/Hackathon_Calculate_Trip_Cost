@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="22" failures="1" name="Hackathon.Testng_CalculateTripCost" time="0.649" errors="0" skipped="21">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Sarkhel\eclipse-workspace\CalculateTripCost"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Sarkhel\eclipse-workspace\CalculateTripCost"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Sarkhel\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\Sarkhel\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5518514372963567092.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-15.0.2/bin/server;C:/Program Files/Java/jdk-15.0.2/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Users\Sarkhel\AppData\Local\Microsoft\WindowsApps;;C:\Users\Sarkhel\Desktop;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="59.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Sarkhel"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="15"/>
+    <property name="user.name" value="Sarkhel"/>
+    <property name="java.class.path" value="C:\Users\Sarkhel\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.16.0.20200610-1735\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15.0.2"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\Sarkhel\eclipse-workspace\CalculateTripCost\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="SetDrivers" time="0.589">
+    <failure message="Unable to create new service: ChromeDriverService
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-BTT9JPH&apos;, ip: &apos;192.168.1.148&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 75 milliseconds" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: Unable to create new service: ChromeDriverService
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-BTT9JPH&apos;, ip: &apos;192.168.1.148&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 75 milliseconds
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at Hackathon.Testng_CalculateTripCost.SetDrivers(Testng_CalculateTripCost.java:57)
+Caused by: org.openqa.selenium.SessionNotCreatedException: Unable to create new service: ChromeDriverService
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-BTT9JPH&apos;, ip: &apos;192.168.1.148&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-BTT9JPH&apos;, ip: &apos;192.168.1.148&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.lambda$get$0(ServicedSession.java:135)
+	at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply(ServicedSession.java:152)
+	at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12(ActiveSessionFactory.java:180)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.util.stream.ReferencePipeline$11$1.accept(ReferencePipeline.java:442)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.server.ActiveSessionFactory.apply(ActiveSessionFactory.java:183)
+	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2(NewSessionPipeline.java:66)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.util.Collections$2.tryAdvance(Collections.java:4820)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3(NewSessionPipeline.java:69)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.util.stream.DistinctOps$1$2.accept(DistinctOps.java:174)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.util.stream.Streams$StreamBuilderImpl.tryAdvance(Streams.java:397)
+	at java.util.stream.Streams$ConcatSpliterator.tryAdvance(Streams.java:720)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession(NewSessionPipeline.java:72)
+	at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute(BeginSession.java:65)
+	at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0(WebDriverServlet.java:235)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.lang.Thread.run(Thread.java:832)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2acf57e3
+</system-out>
+    <system-err>Feb 26, 2021 7:45:52 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+</system-err>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="SetUrl" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="screenShot" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="SearchDestination" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="screenShot" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="ClickHolidayHomesButton" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="SetDate" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="screenShot" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="NoOfGuests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="screenShot" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="RatingSort" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="screenShot" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="LiftAccess" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="screenShot" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="HotelDetails" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="screenShot" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="GetHotelScreenShots" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="screenShot" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="SetCruises" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="screenShot" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="GetCruiseDetails" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Hackathon.Testng_CalculateTripCost" name="CloseBrowser" time="0.058">
+    <skipped/>
+  </testcase>
+</testsuite>
