@@ -2,9 +2,9 @@
  
 # Calculate Trip Cost
 
-# An automation testing project, where we had to fetch 3 hotel details, for 4 people in Nairobi, with a dynamic date starting from tomorrow till 5 days after. Then we needed to fetch the hotel details, prices per night, total charges of these 3 hotels. After this we move on to our second stage, to choose cruises and get cruise details, services offered and languages.
+## An automation testing project, where we had to fetch 3 hotel details, for 4 people in Nairobi, with a dynamic date starting from tomorrow till 5 days after. Then we needed to fetch the hotel details, prices per night, total charges of these 3 hotels. After this we move on to our second stage, to choose cruises and get cruise details, services offered and languages.
 
-# Brief about Tools used:
+## Brief about Tools used:
 
 ## To achieve this we have used data driven frameworks, used various Testing frameworks, automated with Selenium and Java, along with Extent Report.
 
@@ -59,4 +59,4 @@
 
 
 ### More in-detailed and attached screenshots are there!! 
-# A big thanks to my Team Members Abhijit, Utsab, Jaydev and Soujanya to help me finish the project.
+## A big thanks to my Team Members Abhijit, Utsab, Jaydev and Soujanya to help me finish the project.
