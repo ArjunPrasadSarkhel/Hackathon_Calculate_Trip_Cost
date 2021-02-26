@@ -59,4 +59,4 @@
 
 
 ### More in-detailed and attached screenshots are there!! 
-## A big thanks to my Team Members Abhijit, Utsab, Jaydev and Soujanya to help me finish the project.
+
