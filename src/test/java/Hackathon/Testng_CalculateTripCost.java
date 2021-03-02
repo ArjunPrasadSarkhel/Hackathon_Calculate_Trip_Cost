@@ -41,7 +41,7 @@ public class Testng_CalculateTripCost {
 	public static ExtentTest extentTest;
 	public static RemoteWebDriver driver;
 	
-	@BeforeSuite
+	@BeforeSuite (groups = { "Basics" })
 	//This function is used to initialize the drivers.
 	public void SetDrivers() throws IOException {
 		//Creating an object of DriverSetup class to use the different drivers of different browsers.
@@ -50,11 +50,11 @@ public class Testng_CalculateTripCost {
 		//Setting up the driver for chosen browser from properties file
 		if(getPropertyFile("Browser").equalsIgnoreCase("Chrome")) {
 			
-			//driver = (RemoteWebDriver) obj.setupChromeDriver();
+			driver = (RemoteWebDriver) obj.setupChromeDriver();
 			
 			//For Selenium Grid we will enable these two lines
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome(); //customize the desired capabilities for the browser
-			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities); 
+			//DesiredCapabilities capabilities = DesiredCapabilities.chrome(); //customize the desired capabilities for the browser
+			//driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities); 
 			
 			
 			driver.manage().window().maximize(); // maximizes window
@@ -135,7 +135,7 @@ public class Testng_CalculateTripCost {
 		
 	}
 	
-	@Test (priority = 0)
+	@Test (priority = 0, groups= {"Hotels"})
 	//This function to to set the url 
 	public void SetUrl() throws IOException {
 		
@@ -156,7 +156,7 @@ public class Testng_CalculateTripCost {
 		
 	}
 	
-	@Test (priority = 1)
+	@Test (priority = 1, groups= {"Hotels"})
 	//This function is to search the Destination
 	public void SearchDestination() throws IOException, InterruptedException {
 
@@ -179,7 +179,7 @@ public class Testng_CalculateTripCost {
 		
 	}
 	
-	@Test (priority = 2, dependsOnMethods = "SearchDestination")
+	@Test (priority = 2, dependsOnMethods = "SearchDestination", groups= {"Hotels"})
 	//To Click on the Holiday Homes Button
 	public void ClickHolidayHomesButton() throws InterruptedException {
 		
@@ -209,7 +209,7 @@ public class Testng_CalculateTripCost {
 		
 	}
 	
-	@Test (priority = 3)
+	@Test (priority = 3, groups= {"Hotels"})
 	//To set the Check-in and Check-out Dates
 	public void SetDate() throws IOException, InterruptedException {
 		
@@ -241,7 +241,7 @@ public class Testng_CalculateTripCost {
 		
 	}
 	
-	@Test (priority = 4)
+	@Test (priority = 4, groups= {"Hotels"})
 	//To select the Number of Guests
 	public void NoOfGuests() throws Exception {
 
@@ -279,7 +279,7 @@ public class Testng_CalculateTripCost {
 	        
 	  }
 	
-	@Test(priority = 5)
+	@Test(priority = 5, groups= {"Hotels"})
 	//To sort the results by Traveler Ratings
 	public void RatingSort() throws Exception{
 		
@@ -305,7 +305,7 @@ public class Testng_CalculateTripCost {
 		
 	 }
 	 
-	@Test( priority = 6)
+	@Test( priority = 6, groups= {"Hotels"})
 	//To click on LiftAaccess
 	public void LiftAccess() throws Exception
 	{
@@ -335,7 +335,7 @@ public class Testng_CalculateTripCost {
 		
 	}
 	
-	@Test (priority = 7)
+	@Test (priority = 7, groups= {"Hotels"})
 	//To get all the required details of the top-3 result hotels
 	public void HotelDetails() throws IOException, InterruptedException {
 		
@@ -377,7 +377,7 @@ public class Testng_CalculateTripCost {
 		extentTest.log(LogStatus.INFO, "Search Results Shown");
 	}
 	
-	@Test (priority = 8)
+	@Test (priority = 8, groups= {"Hotels"})
 	//To get the screenshots of the 3 respective Hotels
 	public void GetHotelScreenShots() throws IOException, InterruptedException {
 		
@@ -407,7 +407,7 @@ public class Testng_CalculateTripCost {
 		//Using ExtentReport to log the Status
 	}
 	
-	@Test (priority = 9)
+	@Test (priority = 9, groups= {"Cruises"})
 	//To set the Cruise Ship and Cruise Line
 	public void SetCruises() throws IOException, InterruptedException {
 		
@@ -460,7 +460,7 @@ public class Testng_CalculateTripCost {
 		System.out.println("CruiseShips chosen is: "+CruiseShip+" CruiseLine chosen is: "+CruiseLine);
 	}
 	
-	@Test (priority = 10, dependsOnMethods = "SetCruises")
+	@Test (priority = 10, dependsOnMethods = "SetCruises", groups= {"Cruises"})
 	//To get the Cruise Details
 	public void GetCruiseDetails() throws IOException, InterruptedException {
 		
@@ -496,7 +496,7 @@ public class Testng_CalculateTripCost {
 		
 	}
 	
-	@AfterMethod //AfterMethod annotation - This method executes after every test execution
+	@AfterMethod (groups = { "Hotels", "Cruises" })//AfterMethod annotation - This method executes after every test execution
 	public void screenShot(ITestResult result){
 	//using ITestResult.FAILURE is equals to result.getStatus then it enter into if condition
 		if(ITestResult.FAILURE==result.getStatus()){
@@ -515,7 +515,7 @@ public class Testng_CalculateTripCost {
 		}
 	}
 	
-	@AfterSuite
+	@AfterSuite (groups = { "Basics" })
 	public void CloseBrowser() {
 		
 		//To quit the browser
