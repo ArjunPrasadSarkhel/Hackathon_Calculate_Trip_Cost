@@ -13,6 +13,7 @@
           <include name="RatingSort"/>
           <include name="SetCruises"/>
           <include name="screenShot"/>
+          <include name="HotelDetails"/>
           <include name="SetDrivers"/>
           <include name="CloseBrowser"/>
           <include name="GetCruiseDetails"/>
