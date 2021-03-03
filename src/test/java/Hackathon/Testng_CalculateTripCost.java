@@ -285,7 +285,7 @@ public class Testng_CalculateTripCost {
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
 		//We check if the Traveller Rating Dropdown is present or it is clickable
-		WebDriverWait wait=new WebDriverWait(driver, 30);
+		WebDriverWait wait=new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(getPropertyFile("Sort_rate"))));
 		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(getPropertyFile("Sort_rate"))));
 	    
@@ -400,7 +400,7 @@ public class Testng_CalculateTripCost {
 			extentTest.log(LogStatus.INFO, "Hotels from Search Result Number: "+i);
 			
 			//Adding Extent Report
-			String extentReportImage6 = System.getProperty("user.home") + "\\eclipse-workspace\\CalculateTripCost\\ScreenShots\\+Hotel + "+i+".png";
+			String extentReportImage6 = System.getProperty("user.home") + "\\eclipse-workspace\\CalculateTripCost\\ScreenShots\\Hotel + "+i+".png"; 
 			extentTest.log(LogStatus.INFO,"ScreenShot of Search Resuslts's Hotels : "+ extentTest.addScreenCapture(extentReportImage6));
 			
 		}	

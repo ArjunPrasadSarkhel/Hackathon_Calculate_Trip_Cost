@@ -5,20 +5,14 @@
     <classes>
       <class name="Hackathon.Testng_CalculateTripCost">
         <methods>
-          <include name="LiftAccess"/>
+          <include name="RatingSort"/>
           <include name="SetCruises"/>
           <include name="screenShot"/>
           <include name="HotelDetails"/>
-          <include name="NoOfGuests"/>
-          <include name="CloseBrowser"/>
-          <include name="GetHotelScreenShots"/>
-          <include name="RatingSort"/>
-          <include name="ClickHolidayHomesButton"/>
-          <include name="SetUrl"/>
-          <include name="SearchDestination"/>
-          <include name="SetDate"/>
           <include name="SetDrivers"/>
+          <include name="CloseBrowser"/>
           <include name="GetCruiseDetails"/>
+          <include name="GetHotelScreenShots"/>
         </methods>
       </class> <!-- Hackathon.Testng_CalculateTripCost -->
     </classes>
